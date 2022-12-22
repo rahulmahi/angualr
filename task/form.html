@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/form.js"></script>
+  </head>
+  <body>
+    <div ng-app="task" ng-controller="taskCtrl">
+      <form action="" name="userform">
+      <label class="lab">Enter your name : <input type="text" ng-model="fname" class="fname" placeholder="enter your name"/></label><br />
+      <label class="lab">Enter your Last Name : <input type="text" ng-model="lname" class="fname" placeholder="enter your last name"></label><br>
+      <label class="lab">Enter your DOB : <input type="date" ng-model="age" class="fname" placeholder="enter your age"/></label><br />
+      <label class="lab">Enter your Phone Number : <input type="number" ng-model="usernumber" class="fname" placeholder="enter your mobile number"/></label><br />
+      
+      <select ng-model="select" ng-options="x for x in country" class="opt" ng-model=""></select>
+      
+       <button class="btn" ng-click="save()">save</button>
+
+      <!-- <h2>{{firstname + lastname}}</h2>
+      <h2>{{DOB}}</h2>
+      <h2>{{number}}</h2> -->
+    </form>
+     
+      <!-- <h2 ng-bind="your"></h2>
+      <h2 ng-bind="age"></h2>
+      <h2 ng-bind="you"></h2> -->
+    </div>
+  </body>
+</html>
